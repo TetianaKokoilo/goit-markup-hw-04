@@ -222,6 +222,22 @@ img {
 .features {
   padding: 94px 0;
 }
+.icon-names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: var(--section-team-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.features-icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .work {
   padding-bottom: 94px;
 }
