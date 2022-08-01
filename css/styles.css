@@ -145,17 +145,29 @@ img {
 .header-nav .nav + .nav {
   margin-left: 50px;
 }
-
+.nav {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
 .header-email,
 .header-tel {
+  display: flex;
   padding: 32px 0;
 
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.email.icon {
+  display: block;
+  margin-right: 10px;
+
+}
+.email.icon:hover {
+  color: var(--accent-color);
 }
 
 .main {
@@ -237,6 +249,33 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.action-item:not(:last-child) {
+  margin-right: 10px;
+}
+}
+.icon-edit {
+  padding: 0;
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.action-item:hover,
+.actions:focus {
+  color: var(--accent-color);
+}
+
+.site-icon {
+  align-items: center;
 }
 .work {
   padding-bottom: 94px;
@@ -324,6 +363,8 @@ img {
   color: var(--title-text-color);
 }
 .title-work {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
