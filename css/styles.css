@@ -13,6 +13,7 @@
   --border-portfolio-color: #eeeeee;
   --border-header-color: #ececec;
   --outline-color: tomato;
+  --svg-color: #AFB1B8;
 }
 body {
   background-color: var(--background-color);
@@ -267,8 +268,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: var(--svg-color);
 }
-
+.icon-edit:hover {
+  background-color: var(--accent-color);
+  fill: var(--main-title-color);
+}
 .site-icon {
   align-items: center;
 }
