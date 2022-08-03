@@ -142,10 +142,11 @@ img {
 .header-nav {
   display: flex;
   margin-left: auto;
+  gap: 30px;
 }
-.header-nav .nav + .nav {
+/*.header-nav .nav + .nav {
   margin-left: 50px;
-}
+}*/
 .nav {
   display: flex;
   flex-direction: row-reverse;
@@ -155,7 +156,6 @@ img {
 .header-tel {
   display: flex;
   padding: 32px 0;
-  margin-left: 10px;
 
   font-weight: 500;
   font-size: 14px;
@@ -163,8 +163,14 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.email.icon {
-  display: flex;
+.email-icon {
+  display: inline-block;
+  margin-right: 10px;
+  fill: var(--primary-text-color)
+}
+.email-icon:hover {
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .main {
