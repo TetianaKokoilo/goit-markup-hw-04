@@ -466,6 +466,37 @@ img {
   background: var(--primary-btn-color);
   border: 1px solid var(--border-portfolio-color);
 }
+/*customers*/
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.customers-item {
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon-customers {
+  padding: 0;
+  margin: 0;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*footer*/
 .footer-web {
   display: block;
