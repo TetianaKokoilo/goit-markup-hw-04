@@ -479,10 +479,6 @@ img {
   margin: 0;
   list-style: none;
 }
-.customers-item {
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-}
 .customers-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -495,6 +491,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--svg-color);
+  border-radius: 4px;
+  fill: var(--svg-color);
+}
+
+.icon-customers:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /*footer*/
